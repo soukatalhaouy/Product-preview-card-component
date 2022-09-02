@@ -1,0 +1,100 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body{
+    background-color:hsl(30, 38%, 92%);
+  }
+  .container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 560px;
+    height: 450px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container .product-image .desktop-image{
+    width:300px;
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+    float: left;
+    padding-right: 2rem;
+  }
+  .container .product-image .mobile-image{
+    display: none;
+  }
+  .container .content{
+    padding: 2rem;
+  }
+  .container .content .perfume{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif ; 
+    color: hsl(228, 12%, 48%);
+    font-size:12px;
+    font-weight: 700px;
+  }
+  .container h1{
+    color:  hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif ;
+  }
+  .container p {
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5 ;
+  }
+  .container .content .new-price{
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif ; 
+    font-size: 2rem;
+    margin-right: 15px;
+  }
+  .container .content .old-price{
+    color: hsl(228, 12%, 48%);
+  }
+  .container .content button{
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border: 1px solid hsl(158, 36%, 37%);
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+   /* Mobile */
+   @media (max-width:375px){
+    .container {
+      border-radius: 10px;
+      width: 360px;
+      height: 600px;
+    }
+    .container .product-image .mobile-image{
+      width:360px;
+      border-radius: 10px 10px 0 0;
+      display: block;
+    }
+    .container .product-image .desktop-image{
+      display: none;
+    }
+    .container .content{
+      padding: 2rem;
+    }
+    .container .content button{
+      padding: 15px;
+      width: 300px;
+    }
+  }
+
+
+ 
+ 
+
+ 
+  
+ 
